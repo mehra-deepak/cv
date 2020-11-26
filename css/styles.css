@@ -65,23 +65,25 @@ a:hover{
 }
 
 .table{
-  text-align:left;
+  text-align:center;
   font-weight: normal;
   font-family: 'Merriweather', sans-serif;
-  margin-left: 80px;
 }
 
 .div-table{
   width: 50%;
-  margin:100px auto 100px auto;
-  text-align: left;
+  margin:auto 320px auto 300px;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
 }
 
 .tech{
   text-align: center;
 
 }
-
+.fig-caption{
+  text-align: center;
+}
 .IR{
   margin-top:10px;
 }
@@ -122,11 +124,18 @@ a:hover{
   margin-left: 30px;
 }
 
+
 .machine{
   width: 42%;
   float: left;
   margin-right: 30px;
 
+}
+
+.dsa{
+  width: 42%;
+  float: right;
+  margin-left: 30px;
 }
 .ukulele{
   width: 42%;

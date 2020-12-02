@@ -5,6 +5,13 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+@media(max-width: 1028px) {
+  body{
+    font-size: 1.7rem;
+  }
+
+}
+
 #title{
   background-color: #407389;
   color:white;
@@ -74,7 +81,7 @@ h1 {
 }
 
 
-@media(max-width: 1028px) {
+@media(max-width: 1396px) {
   .top-cloud {
     position: absolute;
     right: 190px;

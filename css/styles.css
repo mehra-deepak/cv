@@ -1,58 +1,14 @@
-
+/* TAGS IN SEQUENCE TOP-TO-BOTTOM */
 body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
 }
 
-h1 {
-  color: white;
-  font-size: 5.625rem;
-  font-family: 'Sacramento', cursive;
-  margin : 0 auto 0 auto;
+#title{
+  background-color: #407389;
+  color:white;
 }
-
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  padding:10px;
-  font-weight:bold;
-}
-
-h3{
-  font-weight: 500;
-  font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  margin:0;
-
-}
-h4{
-  margin:0;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-}
-p{
-  line-height: 2;
-}
-
-hr{
-  color: #407389;
-  border : dotted 6px;
-  border-bottom: none;
-  width: 6%;
-  margin: 100px auto;
-}
-a{
-  color:black;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px 5px;
-  text-decoration: none;
-}
-a:hover{
-  color:#eaf6f6;
-
-}
-
 .intro-first{
   text-align: center;
   color: white;
@@ -64,26 +20,150 @@ a:hover{
 
 }
 
-.table{
-  text-align:center;
-  font-weight: normal;
-  font-family: 'Merriweather', sans-serif;
+h1 {
+  color: white;
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  margin : 0 auto 0 auto;
 }
 
-.div-table{
-  width: 50%;
-  margin:auto 320px auto 300px;
-  text-align: center;
-  font-family: 'Merriweather', sans-serif;
+/* NAVBAR ---> Clouds Mountains etc stuff */
+
+
+.nav-item {
+  padding: 0 0;
 }
 
-.tech{
-  text-align: center;
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+  margin-bottom: 15px;
 
 }
-.fig-caption{
-  text-align: center;
+
+/* Navbar */
+
+.navbar{
+  padding: 0;
+  background-color: #407389;
 }
+
+.container-fluid{
+  padding : 3% 5% 0 5%;
+
+}
+
+/* TITLE BAR ---> Clouds Mountains etc stuff */
+.top-container {
+  background-color: #407389;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 325px;
+  top: 250px;
+}
+
+.bottom-left-cloud {
+  position: absolute;
+  left: 420px;
+  top: 400px;
+}
+
+
+@media(max-width: 1028px) {
+  .top-cloud {
+    position: absolute;
+    right: 190px;
+    top: 270px;
+  }
+
+  .bottom-left-cloud {
+    position: absolute;
+    left: 255px;
+    top: 380px;
+  }
+}
+
+.mountain {
+  width: 100%;
+  height: auto;
+}
+
+/* Profile Section */
+
+.my-image{
+  margin:100px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding:10px;
+  font-weight:bold;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+p{
+  line-height: 2;
+  margin: 2% 0;
+}
+
+/* hr */
+hr{
+  color: #407389;
+  border : dotted 6px;
+  border-bottom: none;
+  width: 6%;
+  margin: 100px auto;
+}
+
+
+
+/* Experience */
+
+.exp-row{
+    width: 50%;
+    margin:100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.infinite-red{
+
+  float: left;
+  margin-right: 20px
+}
+
+.genpact{
+
+  float: right;
+  margin-left: 20px;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+
+
+}
+.exp-h4{
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2;
+}
+
 .IR{
   margin-top:10px;
 }
@@ -91,15 +171,8 @@ a:hover{
     margin-top:10px;
 }
 
-.middle-container{
-  margin:100px 0;
-  text-align:center;
-}
-.bottom-container{
-  text-align: center;
-  background-color: #407389;
-  padding: 50px 0  20px;
-}
+/* Skills */
+
 
 .skill-row{
   width: 50%;
@@ -107,12 +180,7 @@ a:hover{
   text-align: left;
 
 }
-.exp-row{
-    width: 50%;
-    margin:100px auto 100px auto;
-    text-align: left;
-    line-height: 2;
-}
+
 .deep{
   width:42%;
   float: left;
@@ -142,30 +210,93 @@ a:hover{
   float: right;
   margin-left: 30px;
 }
-.infinite-red{
 
-  float: left;
-  margin-right: 20px;
-  margin-top:0;
-  margin-bottom: 0;
+@media(max-width: 1028px) {
+
+  h3{
+    font-weight: bold;
+  }
+
+  p{
+    margin: 10px;
+  }
+
+  #skills{
+    text-align: center;
+  }
+
+  .skill-row{
+    width:50%;
+    margin:100px auto 100px auto;
+    text-align: center;
+
+
+  }
+
+  .deep{
+    position: static;
+    width:100%;
+    margin-bottom: 20px;
+
+  }
+  .computer{
+    position: static;
+    width:100%;
+    margin-bottom: 20px;
+
+
+  }
+
+
+  .machine{
+    position: static;
+    width:100%;
+    margin-bottom: 20px;
+
+  }
+
+  .dsa{
+    position: static;
+    width:100%;
+    margin-bottom: 20px;
+
+  }
+
+  .ukulele{
+    position: static;
+    width:100%;
+    margin-bottom: 20px;
+
+  }
+
 }
 
-.intro{
-  width: 30%;
-  margin: auto;
-}
-.genpact{
+/* Tech Stack */
 
-  float: right;
-  margin-left: 20px;
+#tech-stack {
+  padding:7% 15%;
+  background-color: white;
 }
-.top-container{
-  background-color: #407389;
+
+.feature-box{
   text-align: center;
-  position: relative;
-  padding-top: 100px;
+  padding:2%;
+  font-size: bold;
+}
+
+.last-hr{
+  margin-top: 20px;
+  margin-bottom: 100px;
 
 }
+
+.after-skills{
+
+
+}
+
+/* Contact Section */
+
 .contact-disc{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
@@ -173,33 +304,11 @@ a:hover{
 }
 
 
-.top-cloud{
-  position: absolute;
-  right:300px;
-  top:350px;
-}
-
-
-.bottom-left-cloud{
-  position: absolute;
-  left:420px;
-  bottom:360px;
-}
-
-.mountain{
-  width: 100%;
-  height: auto;
-}
 .contact-message{
   width: 40%;
   margin:40px auto 60px;
 }
 
-.copyright{
-  color: #eaf6f6;
-  font-size: 0.75rem;
-  padding: 20px 0;
-}
 .btn {
   background: #407389;
   background-image: -webkit-linear-gradient(top, #407389, #11999e);
@@ -225,4 +334,34 @@ a:hover{
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+
+
+/* Footer Section */
+
+a{
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 5px;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+
+}
+
+
+.bottom-container{
+  text-align: center;
+  background-color: #407389;
+  padding: 50px 0  20px;
+  margin : 5% auto 0  auto;
+}
+
+
+.copyright{
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
 }

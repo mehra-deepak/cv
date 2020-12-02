@@ -1,139 +1,255 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
   <title>Deepak Mehra</title>
-  <link rel="stylesheet" href="css/styles.css">
+
   <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Styling Sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font-Awesome -->
+  <script src="https://kit.fontawesome.com/833d59c510.js" crossorigin="anonymous"></script>
+
+  <!-- BootStrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="assets\images\cloud.png" alt="cloud-img">
-    <h4 class="intro-first">Thanks for popping by, & Welcome onboard</h4>
-    <h1> I'm Deepak Mehra.</h1>
-    <img class="bottom-left-cloud" src="assets\images\cloud.png" alt="cloud-img">
-    <img class="mountain" src="assets\images\mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-  <div class="profile">
-    <img src="assets\images\deepak.png" alt="deepak's img" width="250" height="250">
-    <h2>Namaste.</h2>
-    <p  class="intro">I'm an aspiring Computer Science Engineer,<br> a Deep Learning Practitioner and a Web enthusiast. <br>I also love singing and after work you can find me vibing with my Ukulele.</p>
-    <div class="experience">
+  <section id="title">
 
-      <hr />
+    <!-- CheckPoint 1: The Navbar -->
+    <!-- Nav Bar -->
 
-      <h2>Experience.</h2>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"> </a>
 
-      <div class="exp-row">
-        <img class="infinite-red" src="assets\images\infinite-red.png" alt="computer img" width="250" height="250">
-        <h3>Infinite Red, Inc.</h3>
-        <h4>Content Creator and Alpha Tester</h4>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <h4>Oct 2019 - Dec 2019</h4>
-        <p class="IR">Worked with the CIO of Infinite Red Inc. in building the course material for Infinite Red Academy. My task was to verify the course material and mathematical formulation for the machine learning algorithms used in the course.</p>
-      </div>
-      <div class="exp-row">
-        <img class="genpact" src="assets\images\genpact.png" alt="genpact img" width="250" height="250">
-        <h3>Genpact</h3>
-        <h4>Machine Learning Intern</h4>
-        <h4>May 2019 - Jul 2019</h4>
-        <p class="Gen">Worked in Intent Classification of types and subtypes of emails, build a machine learning pipeline for the business problem, and worked out on the dataset with over 50K emails by testing various machine learning algorithms. </p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>Skills.</h2>
-        <div class="skill-row">
-          <img class="deep" src="assets\images\deep-neural-network.gif" alt="deep learning img" width="250" height="250">
-          <h3>Deep Learning</h3>
-          <p>I have been into Deep Learning for over a year now, to be specific I have a special love for Computer Vision and GAN based models. The idea of<b>"What if the machine could think"</b> has always inspired me and i find Deep Learning much convincing in that direction.</p>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="skill-row">
-          <img class="computer" src="assets\images\web-deisgn.gif" alt="computer img" width="250" height="250">
-          <h3>Web Designing & Development</h3>
-          <p>I'm a Budding Web Designer and Developer, in fact, I'm building this site on my 4th Day of learning WEBD, for me Web Development is not a technology, rather an expression that will help me unleash my casual creativity and reach out to the world with the voice in my head.</p>
-        </div>
-        <div class="skill-row">
-          <img class="machine" src="assets\images\machine-learning.gif" alt="computer img" width="250" height="250">
-          <h3>Machine Learning</h3>
-          <p>Machine Learning was the first tech, that I managed to learn (somehow) during my college, being able to extract relevant information from data has always triggered my curiosity, building a machine learning pipeline and producing astonishing results still overwhelm me and never fail to leave me unexcited.</p>
-        </div>
+      </nav>
 
-        <div class="skill-row">
-          <img class="dsa" src="assets\images\dsa.gif" alt="dsa img" width="250" height="250">
-          <h3>Data Structures</h3>
-          <p>I'm fluent with different Data Structures like Arrays, Linked List, Trees, HashMaps, Stack and Queues and have played around various techniques like Recursion, Memoization, Backtracking to name a few to solve more than 500 questions quantatively discovering 20+ patterns qualitatively.</p>
-        </div>
+    </div>
 
-        <div class="skill-row">
-          <img class="machine" src="assets\images\maths.gif" alt="maths img" width="250" height="250">
-          <h3>Maths and Statistics</h3>
-          <p>I discovered maths as an asset which contributed the most in my evolution as an engineer as well as a life long learner, with strong foundational knowledge of mathematics i was able to decode the algorithms of machine learning and during this journey I felt afresh in love with statistics.</p>
-        </div>
+    <!-- CheckPoint 2: The Title -->
+    <div class="top-container">
+      <img class="top-cloud" src="assets\images\cloud.png" alt="cloud-img">
+      <h4 class="intro-first">Thanks for popping by, & Welcome onboard</h4>
+      <h1> I'm Deepak Mehra.</h1>
+      <img class="bottom-left-cloud" src="assets\images\cloud.png" alt="cloud-img">
+      <img class="mountain" src="assets\images\mountain.png" alt="mountain-img">
+    </div>
+  </section>
 
-        <div class="skill-row">
-          <img class="ukulele" src="assets\images\ukulele.gif" alt="ukulele img" width="250" height="250">
-          <h3>Playing Ukulele</h3>
-          <p>If you are not interested in tech and still visiting this site, then first I thank you for bearing with me so far and worry not because I can jam well with my ukulele and all you have to do is, accompany me.</p>
-        </div>
-  </div>
-  <hr />
-  <h2  class="tech">My Tech Stack.</h2>
+  <section id="introduction">
 
-  <div class="div-table">
+    <!-- CheckPoint 3: Introduction -->
+
+    <div class="profile">
+      <img class="my-image" src="assets\images\deepak.png" alt="deepak's img" width="250" height="250">
+      <h2>Namaste.</h2>
+      <p class="intro">I'm an aspiring Computer Science Engineer,a Deep Learning Practitioner and a Web enthusiast.I also love singing and after work you can find me vibing <br> with my Ukulele.</p>
+    </div>
 
 
+  </section>
 
-      <table class="table">
-
-
-        <tr>
-          <td><figure><img src="assets\images\html.png" alt="HTML-5-img" width="150" height="150"></figure> <figcaption class="fig-caption">HTML</figcaption></td>
-          <td><figure><img src="assets\images\css3.png" alt="CSS-img" width="150" height="150"></figure> <figcaption class="fig-caption">CSS</figcaption></td>
-          <td><figure><img src="assets\images\bootstrap-stack.png" alt="bootstrap-img" width="150" height="150"></figure> <figcaption class="fig-caption">Bootstrap</figcaption></td>
-          <td><figure><img src="assets\images\my-sql.png" alt="mysql-img" width="150" height="150"></figure> <figcaption class="fig-caption">SQL</figcaption></td>
-
-        </tr>
-
-        <tr>
-          <td><figure><img src="assets\images\c++.png" alt="c++-img" width="150" height="150"></figure> <figcaption class="fig-caption">C++</figcaption></td>
-          <td><figure><img src="assets\images\python.png" alt="python-img" width="150" height="150"></figure> <figcaption class="fig-caption">Python</figcaption></td>
-          <td><figure><img src="assets\images\git.png" alt="git-img" width="150" height="150"></figure> <figcaption class="fig-caption">Version Control</td>
-          <td><figure><img src="assets\images\pytorch.png" alt="pytorch-img" width="150" height="150"></figure> <figcaption class="fig-caption">PyTorch</td>
-        </tr>
-
-        <tr>
-          <td><figure><img src="assets\images\opencv.png" alt="opencv-img" width="150" height="150"></figure> <figcaption class="fig-caption">OpenCV</figcaption></td>
-        </tr>
-
-      </table>
-
-  </div>
-
-
-</div>
-
-  </div>
   <hr>
-  <div class="contact-me">
-    <h2>Get In Touch</h2>
-    <h3 class="contact-disc">if(Need any sort of help || Love tech unconditionally || Liked my work || Want to just say "Hello")  </h3>
-    <p class="contact-message">I love communicating and exchanging ideas with people. Being able to interact seamlessly, and empathize with them is just another superpower I'm endowed with. <br /> Well that's all about me, you got your story to share hit that button, you got my ears.</p>
-    <a class="btn" href="mailto:work.deepakmehra@gmail.com">CONTACT ME</a>
-  </div>
-</div>
+
+  <section id="experience">
+    <!-- Experience -->
 
 
-<div class="bottom-container">
-  <a class="footer-link" href="https://www.linkedin.com/in/deepak-mehra-408a24157/">LinkedIn</a>
-  <a class="footer-link" href="https://github.com/mehra-deepak">Github</a>
-  <a class="footer-link" href="https://medium.com/@social.deepakmehra">Medium</a>
+    <h2>Experience.</h2>
 
-  <p class="copyright">© 2020 Deepak Mehra.</p>
-</div>
+    <div class="exp-row">
+      <img class="infinite-red" src="assets\images\infinite-red.png" alt="computer img" width="250" height="250">
+      <h3>Infinite Red, Inc.</h3>
+      <h4 class="exp-h4">Content Creator and Alpha Tester</h4>
+      <h4 class="exp-h4">Oct 2019 - Dec 2019</h4>
+      <p class="IR">Worked with the CIO of Infinite Red Inc. in building the course material for Infinite Red Academy. My task was to verify the course material and mathematical formulation for the machine learning algorithms used in the course.</p>
+    </div>
+    <div class="exp-row">
+      <img class="genpact" src="assets\images\genpact.png" alt="genpact img" width="250" height="250">
+      <h3>Genpact</h3>
+      <h4 class="exp-h4">Machine Learning Intern</h4>
+      <h4 class="exp-h4">May 2019 - Jul 2019</h4>
+      <p class="Gen">Worked in Intent Classification of types and subtypes of emails, build a machine learning pipeline for the business problem, and worked out on the dataset with over 50K emails by testing various machine learning algorithms. </p>
+    </div>
+
+
+  </section>
+
+  <hr>
+
+
+
+  <section id="skills">
+
+    <div class="skills">
+      <h2>Skills.</h2>
+      <div class="skill-row">
+        <img class="deep" src="assets\images\deep-neural-network.gif" alt="deep learning img" width="250" height="250">
+        <h3>Deep Learning</h3>
+        <p>I have been into Deep Learning for over a year now, to be specific I have a special love for Computer Vision and GAN based models. The idea of<b>"What if the machine could think"</b> has always inspired me and i find Deep Learning much
+          convincing in that direction.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="computer" src="assets\images\web-deisgn.gif" alt="computer img" width="250" height="250">
+        <h3>Web Designing & Development</h3>
+        <p>I'm a Budding Web Designer and Developer, in fact, I'm building this site on my 4th Day of learning WEBD, for me Web Development is not a technology, rather an expression that will help me unleash my casual creativity and reach out to the
+          world with the voice in my head.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="machine" src="assets\images\machine-learning.gif" alt="computer img" width="250" height="250">
+        <h3>Machine Learning</h3>
+        <p>Machine Learning was the first tech, that I managed to learn (somehow) during my college, being able to extract relevant information from data has always triggered my curiosity, building a machine learning pipeline and producing
+          astonishing results still overwhelm me and never fail to leave me unexcited.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="dsa" src="assets\images\dsa.gif" alt="dsa img" width="250" height="250">
+        <h3>Data Structures</h3>
+        <p>I'm fluent with different Data Structures like Arrays, Linked List, Trees, HashMaps, Stack and Queues and have played around various techniques like Recursion, Memoization, Backtracking to name a few to solve more than 500 questions
+          quantatively discovering 20+ patterns qualitatively.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="machine" src="assets\images\maths.gif" alt="maths img" width="250" height="250">
+        <h3>Maths and Statistics</h3>
+        <p>I discovered maths as an asset which contributed the most in my evolution as an engineer as well as a life long learner, with strong foundational knowledge of mathematics i was able to decode the algorithms of machine learning and during
+          this journey I felt afresh in love with statistics.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="ukulele" src="assets\images\ukulele.jpg" alt="ukulele img" width="250" height="250">
+        <h3>Playing Ukulele</h3>
+        <p>If you are not interested in tech and still visiting this site, then first I thank you for bearing with me so far and worry not because I can jam well with my ukulele and all you have to do is, accompany me.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr class="after-skills">
+
+  <section id="tech-stack">
+
+    <h2 class="tech">My Tech Stack.</h2>
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="feature-box col-lg-3 col-md-6">
+        <figure><img src="assets\images\html.png" alt="HTML-5-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">HTML</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 col-md-6">
+        <figure><img src="assets\images\css3.png" alt="CSS-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">CSS</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 ">
+        <figure><img src="assets\images\bootstrap-stack.png" alt="bootstrap-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">Bootstrap</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 col-md-6">
+        <figure><img src="assets\images\my-sql.png" alt="mysql-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">SQL</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 col-md-6">
+        <figure><img src="assets\images\python.png" alt="python-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">Python</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 ">
+        <figure><img src="assets\images\c++.png" alt="c++-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">C++</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 col-md-6">
+        <figure><img src="assets\images\git.png" alt="git-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">Version Control</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3 col-md-6">
+        <figure><img src="assets\images\pytorch.png" alt="pytorch-img" width="150" height="150"></figure>
+        <figcaption class="fig-caption">PyTorch</figcaption>
+      </div>
+
+      <div class="feature-box col-lg-3">
+        <td>
+          <figure><img src="assets\images\opencv.png" alt="opencv-img" width="150" height="150"></figure>
+          <figcaption class="fig-caption">OpenCV</figcaption>
+        </td>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr class="last-hr">
+
+
+  <section id="contact">
+
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3 class="contact-disc">if(Need any sort of help || Love tech unconditionally || Liked my work || Want to just say "Hello") </h3>
+      <p class="contact-message">I love communicating and exchanging ideas with people. Being able to interact seamlessly, and empathize with them is just another superpower I'm endowed with. <br /> Well that's all about me, you got your story to
+        share hit that button, you got my ears.</p>
+      <a class="btn" href="mailto:work.deepakmehra@gmail.com">CONTACT ME</a>
+    </div>
+
+
+  </section>
+
+
+  <section id="footer">
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/deepak-mehra-408a24157/"><i class="fab fa-linkedin fa-3x"></i></a>
+      <a class="footer-link" href="https://github.com/mehra-deepak"><i class="fab fa-github-square fa-3x"></i></a>
+      <a class="footer-link" href="https://medium.com/@social.deepakmehra"><i class="fab fa-medium fa-3x"></i></a>
+
+      <p class="copyright">© 2020 Deepak Mehra.</p>
+    </div>
+
+
+  </section>
 
 </body>
 
